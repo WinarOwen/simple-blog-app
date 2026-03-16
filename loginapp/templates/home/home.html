@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>My Blog Web App STILL WIP</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quae reiciendis error, illo, nisi quos iusto veniam eaque reprehenderit, consequuntur minus sed nihil necessitatibus omnis voluptatum quidem iste qui!</p>
+</body>
+</html>

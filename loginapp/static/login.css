@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: plum;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: max-content;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.helptext{
+    display: none;
+}
+
+ul{
+    display: none;
+}
+
+button{
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    margin-bottom: 9px;
+    transition: all 1s;
+}
+
+button:hover{
+    background-color: greenyellow;
+}
+
+input{
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
