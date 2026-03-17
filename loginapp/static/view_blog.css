@@ -1,0 +1,25 @@
+body{
+    min-height: 100vh;
+    background-color: plum;
+    margin: 0;
+    padding: 0;
+}
+
+.blogs-wrapper{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+}
+
+.blogs-container{
+    width: 80%;
+    max-width: 800px;
+    padding: 15px;
+    height: max-content;
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid black;
+    border-radius: 5px;
+    
+}
