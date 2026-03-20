@@ -1,4 +1,4 @@
-FROM python:3.13-slim
+FROM python:3.14-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
@@ -23,4 +23,4 @@ RUN python manage.py collectstatic --noinput
 
 
 # Run with Gunicorn
-CMD ["sh", "-c", "python manage.py migrate --noinput && gunicorn BlogProject.wsgi:application --bind 0.0.0.0:10000"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && gunicorn BlogProject.wsgi:application --bind 0.0.0.0:$PORT --workers 2"]

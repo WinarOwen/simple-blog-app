@@ -60,6 +60,7 @@ input{
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .navbar ul{

@@ -61,6 +61,7 @@ input{
     
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+    flex-wrap: wrap;
 }
 
 .navbar ul{
