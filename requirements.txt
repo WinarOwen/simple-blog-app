@@ -3,6 +3,7 @@ certifi==2026.2.25
 distlib==0.4.0
 Django==6.0.3
 filelock==3.25.1
+gunicorn==25.1.0
 packaging==26.0
 pipenv==2026.0.3
 platformdirs==4.9.4
