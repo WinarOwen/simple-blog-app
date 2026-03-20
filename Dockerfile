@@ -21,5 +21,6 @@ COPY . .
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
+
 # Run with Gunicorn
-CMD ["gunicorn", "BlogProject.wsgi:application", "--bind", "0.0.0.0:10000"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && gunicorn BlogProject.wsgi:application --bind 0.0.0.0:10000"]
