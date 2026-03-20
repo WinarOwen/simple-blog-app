@@ -8,10 +8,23 @@
     <link rel="stylesheet" href="{% static 'login.css' %}">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'create_blog' %}">Create Blog</a></li>
+                <li><a href="{% url 'view_blog' %}">View Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Login</button>
     </form>
+    </div>
 </body>
 </html>

@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="{% static 'view_blog.css' %}">
 </head>
 <body>
-    <h1>Blogs</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'create_blog' %}">Create Blog</a></li>
+                <li><a href="{% url 'view_blog' %}">View Blog</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="blogs-wrapper">
     {% for blog in blogs %}
     <div class="blogs-container">
@@ -20,14 +30,16 @@
     {% endfor %}
     </div>
 
+    <div class="next-and-prev-container">
     {% if blogs.has_previous %}
-       <a href="?page={{blogs.previous_page_number}}">Previous Page</a>
+       <a href="?page={{blogs.previous_page_number}}" id="prev">Previous</a>
     {% endif %}
 
 
     {% if blogs.has_next %}
-       <a href="?page={{ blogs.next_page_number }}">Next Page</a>
+       <a href="?page={{ blogs.next_page_number }}" id="next">Next</a>
     {% endif %}
+    </div>
 
  
 </body>
