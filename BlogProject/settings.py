@@ -35,6 +35,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://simple-blog-app-production-09d1.up.railway.app/',  # replace with your actual Railway URL
+]
+
 
 
 
