@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if os.environ.get('RENDER') is None:
+if os.environ.get('RAILWAY_ENVIRONMENT') is None:
     load_dotenv()
 
 # Core settings
